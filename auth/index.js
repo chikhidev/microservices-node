@@ -7,6 +7,6 @@ app.use(express.json());
 const authRoutes = require('./routes/authRoutes');
 app.use('/auth', authRoutes);
 
-app.listen(port, () => {
+app.listen(port || 4000, () => {
   console.log(`Server is running at port ${port}`);
 });
